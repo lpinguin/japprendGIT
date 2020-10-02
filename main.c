@@ -2,7 +2,7 @@
     C SOURCE CODE      
 	Project Name:
 	Purpose of source code:
-
+	Teste d'utilisation de Git avec les editions diamond.
 ---------------------------------------------------------------------
 COMPILER NEDEED
 	HARDWARE TARGET: 
@@ -18,11 +18,12 @@ COMPILER NEDEED
 
 SOURCE FILE NEDEED
 	Non standart library -if use-:
-/*
+
 PURPOSE:
 
 FUNCTIONS USED:
-
+	_printf();
+	_main()
 VARIABLES USED:
 
 CONDICTIONS 
