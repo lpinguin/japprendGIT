@@ -1,7 +1,7 @@
 /*
     C SOURCE CODE      
-	Project Name:
-	Purpose of source code:
+	Project Name: J'apprendre git
+	Purpose of source code: developpement. 
 	Teste d'utilisation de Git avec les editions diamond.
 ---------------------------------------------------------------------
 COMPILER NEDEED
@@ -55,6 +55,6 @@ int main(int argc, char *argv[])
 	{
 
 
-		return 0 ;
+		;
 	}
 /*-------------------------------------------------------------------*/
