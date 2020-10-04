@@ -38,23 +38,46 @@ TIPS:
 */
 
 /*INCLUDE*/
-
-#include<stdlib.h>
-#include<stdio.h>
-#include<string.h>
-
-
-/*PROTOTYPE*/
-
-void nomFonction(parametres)
-
-
+/*PROTOTYPES*/
 /*MAIN*/
 
-int main(int argc, char *argv[])
-	{
+#include <stdio.h>
+#include <math.h>
+ 
+void sieve_of_erathosthenes(int limit, int temp_arr[])
+{
+      int c1, c2;
+      for(c1 = 0; c1 < limit; c1++)
+      {
+            temp_arr[c1] = 1; 
+      }
+      temp_arr[0] = 0, temp_arr[1] = 0; 
+      for(c1 = 2; c1 < sqrt(limit); c1++)
+      {
+            for(c2 = c1*c1; c2 < limit; c2 = c2 + c1)
+            {
+                  temp_arr[c2] = 0; 
+            }
+      }
+}
+ 
+int main()
+{
+      int limit, count;
+      printf("\nEnter The Limit N To Print Prime Numbers:\t");
+      scanf("%d", &limit);
+      int temp_arr[limit];
+      sieve_of_erathosthenes(limit, temp_arr);
+      printf("\n");
+      for(count = 0; count < limit; count++)
+      {
+            if(temp_arr[count] == 1)
+            {
+                  printf("%d\t", count);
+            }
+      }
+      printf("\n");
+      return 0;
+}
 
-
-		;
-	}
 /*-------------------------------------------------------------------*/
