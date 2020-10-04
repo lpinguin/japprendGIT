@@ -1,2 +1,0 @@
-# japprendGIT
-Test de fonctionnement
